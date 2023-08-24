@@ -1,5 +1,5 @@
 const { Thought, User } = require("../models");
-
+// create the functions that will handle the logic for each of the routes needed to work with in the thought-routes.js file (get all thoughts, get a single thought by its _id, create a thought, update a thought, and remove a thought)
 const thoughtController = {
   getAllThoughts(req, res) {
     Thought.find({})

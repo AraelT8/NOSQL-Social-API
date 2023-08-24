@@ -1,6 +1,8 @@
+// create a new schema for a user and add the following fields to it: username, email, thoughts, friends 
 const Thought = require("./Thought");
-
+// this is the model for the user data that will be used in the application (username, email, thoughts, friends, etc.) and exported for use in the routes and controllers folders.
 const { Schema, model } = require('mongoose');
+// create the schema for the User model and add the ThoughtSchema to the userSchema as the thoughts field's data and the UserSchema to the userSchema as the friends field's data 
 const userSchema = new Schema(
   {
     username: {
