@@ -1,3 +1,4 @@
+// date format function to format timestamp data.
 const addDateSuffix = date => {
     let dateStr = date.toString();
   

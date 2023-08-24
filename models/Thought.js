@@ -1,6 +1,8 @@
+// this is the model for the thought data that will be used in the application (thoughts, reactions, etc.) and exported for use in the routes and controllers folders.
 const { Schema, model } = require('mongoose');
 const reactionSchema = require('./Reaction');
 const dateFormat = require('../utils/dateFormat');
+// create the schema for the Thought model and add the ReactionSchema to the thoughtSchema as the reactions field's data
 const thoughtSchema = new Schema(
   {
     thoughtText: {

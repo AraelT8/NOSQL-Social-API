@@ -1,5 +1,5 @@
 const { User } = require("../models");
-
+// create all the functions that will be used as the callback functions in the express routes (get all users, get a single user by its _id and populated thought and friend data, create a new user, update a user by its _id, and delete a user)
 const userController = {
     getAllUsers(req, res) {
       User.find({})
